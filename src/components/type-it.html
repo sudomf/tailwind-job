@@ -1,0 +1,13 @@
+<div class="{{ ctx.class }}" 
+   x-data="{}" 
+   x-init="() => {
+     new TypeIt($el, {
+       cursor: {{ ctx.cursor || false }},
+       speed: {{ ctx.speed || 30 }},
+       startDelay: {{ ctx.delay || 300 }},
+       waitUntilVisible: true,
+       loop: {{ Boolean(ctx.loop) }}
+     }).go();
+   }">
+  {{ ctx.children }}
+</div>

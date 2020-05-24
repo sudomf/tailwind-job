@@ -1,0 +1,35 @@
+<div class="min-h-screen bg-gray-200 text-gray-700 py-20" x-ref="about">
+  <c-container class="max-w-3xl">
+    <c-typography variant="title">About me</c-typography>
+    <c-typography variant="subtitle">Let's take a look at my profile</c-typography>
+
+    <c-card class="text-gray-600 md:flex mt-12 mb-8">
+      <c-image src="/images/profile.jpg" 
+               class="h-16 w-16 mb-6 md:mb-0 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"></c-image>
+      <div class="text-center md:text-left">
+        <h2 class="text-gray-700 text-lg font-bold">Mayke Freitas</h2>
+        <div class="text-indigo-500">Problem Solver</div>
+        <a href="mailto:mayke.sargento@gmail.com">mayke.sargento@gmail.com</a>
+        <div>+55 (22) 99615-2696</div>
+      </div>
+    </c-card>
+
+    <div class="py-8 md:py-0 mb-5 md:mb-10">
+      <c-typography variant="paragraph">I've been working as a developer for 10 years. I really like to use technology to solve problems.</c-typography>
+      <c-typography variant="paragraph">As a developer I hate when I need to be repetitive for anything. So I usually automate everything I can, cause my principal resource, is my time.</c-typography>
+      <c-typography variant="paragraph">I'm the kind of developer that prefer to spend an hour or two creating some tool to help me then spend a lot of time doing copy and paste.</c-typography>
+      <c-typography variant="paragraph">That's why, over time, I got some love for building tools for other developers.</c-typography>
+      <c-typography variant="paragraph">As I've been working as a tech leader and as a developer at the same time, I always need to find solutions to do things fast, good, and maintainable.</c-typography>
+      <c-typography variant="paragraph">There are 4-5 years that I'm working full time remote and I had the experience to be the leader of front-end and design teams, so I had the chance to learn a lot building a design system and refactoring a big legacy monolith.</c-typography>
+      <c-typography variant="paragraph">Refactoring is one of my favorite words, so I don't hesitate when I have a challenge to refactoring something. It can be UI, front end, back end, or even deployment flows and scripts. I really like to do that.</c-typography>
+    </div>
+
+    <c-button size="lg" 
+              variant="primary" 
+              icon="true"
+              @click="scrollTo($refs.fullstack)">
+      <c-arrow-down-icon class="mr-2"></c-arrow-down-icon>
+      <span>Meet my skills</span>
+    </c-button>
+  </c-container>
+</div>

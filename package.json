@@ -1,0 +1,39 @@
+{
+  "name": "tailwindui-job",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mayke Freitas",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint ./**/*.js",
+    "dev": "yarn build:dev && (yarn serve & yarn watch)",
+    "serve": "browser-sync start --host '0.0.0.0' --port 8080 --server 'public' --files 'public' --no-notify",
+    "watch:markup": "chokidar 'src/**/*.html' -c 'yarn build:dev --markup'",
+    "watch:styles": "chokidar 'src/**/*.css' -c 'yarn build:dev --styles'",
+    "watch": "yarn watch:markup & yarn watch:styles",
+    "build:dev": "node build --development",
+    "build:production": "node build --production"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "browser-sync": "^2.26.7",
+    "cheerio": "^1.0.0-rc.3",
+    "chokidar-cli": "^2.1.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^7.0.0",
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "postcss": "^7.0.30",
+    "posthtml": "^0.13.0",
+    "tailwindcss": "^1.4.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn build:production",
+      "pre-commit": "lint-staged --no-stash"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}

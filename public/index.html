@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind UI - Job Application</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body class="antialiased font-sans bg-gray-100 tracking-tight" x-data="{}">
+  <header class="p-3 bg-gray-900 text-white">
+  <div class="container mx-auto flex items-center">
+    <a href="/" class="uppercase">Hire<b class="font-extrabold">Mayke.io</b></a>
+    
+    <div class="ml-auto">
+      <button type="button" class="
+        text-white bg-gray-800 hover:bg-gray-700
+        
+        
+        text-base py-2 px-3
+        
+        inline-flex whitespace-no-wrap items-center justify-center border border-transparent
+        leading-none font-semibold rounded-full
+        focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+  Contact Mayke
+</button>
+    </div>
+  </div>
+</header>
+  <div class="bg-indigo-800 text-white flex items-center pb-32 pt-24 md:pt-40">
+  <div class="container px-4 mx-auto ">
+  
+    <div class="max-w-4xl mx-auto text-center">
+      <img src="/images/tailwindui-logo-on-dark.svg" class="h-7 sm:h-8 lg:h-10 inline-block mb-6" alt="Tailwind UI">
+      <div class="
+  text-5xl md:text-6xl font-extrabold leading-tight 
+   
+   
+  ">
+  Welcome folks from Tailwind UI
+</div>
+  
+      <div class="mt-2 max-w-xl mx-auto text-xl leading-7 lg:max-w-3xl lg:text-2xl lg:leading-8" x-data="{}" x-init="() => {
+     new TypeIt($el, {
+       cursor: true,
+       speed: 30,
+       startDelay: 300,
+       waitUntilVisible: true,
+       loop: false
+     }).go();
+   }">
+  
+        I'll show why you should <b>hire me</b>.
+      
+</div>
+  
+      <button type="button" class="
+        text-white bg-gray-800 hover:bg-gray-700
+        
+        text-lg py-4 pl-5 pr-6
+        
+        mt-8 md:text-xl
+        inline-flex whitespace-no-wrap items-center justify-center border border-transparent
+        leading-none font-semibold rounded-full
+        focus:outline-none focus:shadow-outline transition duration-150 ease-in-out" @click="scrollTo($refs.intro)">
+  
+        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current mr-2" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M11 18.59V3a1 1 0 0 1 2 0v15.59l5.3-5.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-7-7a1 1 0 0 1 1.4-1.42l5.3 5.3z"></path></svg>
+        <span>Meet Me</span>
+      
+</button>
+    </div>
+  
+</div>
+</div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="text-indigo-800 fill-current">
+  <path d="M0,128L80,112C160,96,320,64,480,80C640,96,800,160,960,176C1120,192,1280,160,1360,144L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+</svg>
+  <div class="min-h-screen" x-ref="intro">
+  <div class="container px-4 mx-auto py-20 md:py-40">
+  
+    <div class="
+  text-5xl md:text-6xl font-extrabold leading-tight 
+   
+   
+  ">
+  Hi, my name is Mayke
+</div>
+    <div class="
+   
+  text-2xl md:text-3xl max-w-2xl mt-3 
+   
+  ">
+  I made this website to show some of my skills as a fullstack developer.
+</div>
+
+    <div class="mt-10 max-w-sm grid grid-flow-row grid-cols-2 col-gap-3">
+      <button type="button" class="
+        text-white bg-gray-800 hover:bg-gray-700
+        
+        text-lg py-4 pl-5 pr-6
+        
+        
+        inline-flex whitespace-no-wrap items-center justify-center border border-transparent
+        leading-none font-semibold rounded-full
+        focus:outline-none focus:shadow-outline transition duration-150 ease-in-out" @click="scrollTo($refs.about)">
+  
+        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current mr-2" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M11 18.59V3a1 1 0 0 1 2 0v15.59l5.3-5.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-7-7a1 1 0 0 1 1.4-1.42l5.3 5.3z"></path></svg>
+        <span>Continue</span>
+      
+</button>
+
+      <button type="button" class="
+        text-gray-700 bg-gray-200 hover:bg-gray-300
+        
+        text-lg py-4 pl-5 pr-6
+        
+        
+        inline-flex whitespace-no-wrap items-center justify-center border border-transparent
+        leading-none font-semibold rounded-full
+        focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+  
+        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current mr-2" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M20.59 12l-3.3-3.3a1 1 0 1 1 1.42-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.42-1.4l3.3-3.3zM3.4 12l3.3 3.3a1 1 0 0 1-1.42 1.4l-4-4a1 1 0 0 1 0-1.4l4-4a1 1 0 0 1 1.42 1.4L3.4 12zm7.56 8.24a1 1 0 0 1-1.94-.48l4-16a1 1 0 1 1 1.94.48l-4 16z"></path></svg>
+        <span>Source <span class="hidden sm:inline-block">Code</span></span>
+      
+</button>
+    </div>
+  
+</div>
+</div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="text-gray-200 fill-current">
+  <path d="M0,128L80,112C160,96,320,64,480,80C640,96,800,160,960,176C1120,192,1280,160,1360,144L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+</svg>
+  <div class="min-h-screen bg-gray-200 text-gray-700 py-20" x-ref="about">
+  <div class="container px-4 mx-auto max-w-3xl">
+  
+    <div class="
+  text-5xl md:text-6xl font-extrabold leading-tight 
+   
+   
+  ">
+  About me
+</div>
+    <div class="
+   
+  text-2xl md:text-3xl max-w-2xl mt-3 
+   
+  ">
+  Let's take a look at my profile
+</div>
+
+    <div class="bg-white p-5 rounded-lg shadow-md text-gray-600 md:flex mt-12 mb-8">
+  
+      <img src="/images/profile.jpg" class="h-16 w-16 mb-6 md:mb-0 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6" alt="">
+      <div class="text-center md:text-left">
+        <h2 class="text-gray-700 text-lg font-bold">Mayke Freitas</h2>
+        <div class="text-indigo-500">Problem Solver</div>
+        <a href="mailto:mayke.sargento@gmail.com">mayke.sargento@gmail.com</a>
+        <div>+55 (22) 99615-2696</div>
+      </div>
+    
+</div>
+
+    <div class="py-8 md:py-0 mb-5 md:mb-10">
+      <div class="
+   
+   
+  text-xl mb-5 
+  ">
+  I've been working as a developer for 10 years. I really like to use technology to solve problems.
+</div>
+      <div class="
+   
+   
+  text-xl mb-5 
+  ">
+  As a developer I hate when I need to be repetitive for anything. So I usually automate everything I can, cause my principal resource, is my time.
+</div>
+      <div class="
+   
+   
+  text-xl mb-5 
+  ">
+  I'm the kind of developer that prefer to spend an hour or two creating some tool to help me then spend a lot of time doing copy and paste.
+</div>
+      <div class="
+   
+   
+  text-xl mb-5 
+  ">
+  That's why, over time, I got some love for building tools for other developers.
+</div>
+      <div class="
+   
+   
+  text-xl mb-5 
+  ">
+  As I've been working as a tech leader and as a developer at the same time, I always need to find solutions to do things fast, good, and maintainable.
+</div>
+      <div class="
+   
+   
+  text-xl mb-5 
+  ">
+  There are 4-5 years that I'm working full time remote and I had the experience to be the leader of front-end and design teams, so I had the chance to learn a lot building a design system and refactoring a big legacy monolith.
+</div>
+      <div class="
+   
+   
+  text-xl mb-5 
+  ">
+  Refactoring is one of my favorite words, so I don't hesitate when I have a challenge to refactoring something. It can be UI, front end, back end, or even deployment flows and scripts. I really like to do that.
+</div>
+    </div>
+
+    <button type="button" class="
+        text-white bg-gray-800 hover:bg-gray-700
+        
+        text-lg py-4 pl-5 pr-6
+        
+        
+        inline-flex whitespace-no-wrap items-center justify-center border border-transparent
+        leading-none font-semibold rounded-full
+        focus:outline-none focus:shadow-outline transition duration-150 ease-in-out" @click="scrollTo($refs.fullstack)">
+  
+      <svg xmlns="http://www.w3.org/2000/svg" class="fill-current mr-2" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M11 18.59V3a1 1 0 0 1 2 0v15.59l5.3-5.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-7-7a1 1 0 0 1 1.4-1.42l5.3 5.3z"></path></svg>
+      <span>Meet my skills</span>
+    
+</button>
+  
+</div>
+</div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="text-gray-900 bg-gray-200 fill-current">
+  <path d="M0,128L80,112C160,96,320,64,480,80C640,96,800,160,960,176C1120,192,1280,160,1360,144L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+</svg>
+  <div class="min-h-screen bg-gray-900 text-gray-100 pt-40" x-ref="fullstack">
+  <div class="container px-4 mx-auto ">
+  
+    <div class="
+  text-5xl md:text-6xl font-extrabold leading-tight 
+   
+   
+  ">
+  The Fullstack
+</div>
+    <div class="
+   
+  text-2xl md:text-3xl max-w-2xl mt-3 
+   
+  ">
+  Here is the technology and tools that I have solid  knowledge.
+</div>
+  
+</div>
+
+  <div class="overflow-x-auto py-8 pl-4 sm:mx-auto container">
+    <div class="flex">
+      <button type="button" class="
+        text-white bg-gray-800 hover:bg-gray-700
+        
+        text-lg py-4 px-5
+        
+        mr-3
+        inline-flex whitespace-no-wrap items-center justify-center border border-transparent
+        leading-none font-semibold rounded-full
+        focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+  Frontend
+</button>
+      <button type="button" class="
+        text-white bg-gray-800 hover:bg-gray-700
+        
+        text-lg py-4 px-5
+        
+        mr-3
+        inline-flex whitespace-no-wrap items-center justify-center border border-transparent
+        leading-none font-semibold rounded-full
+        focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+  Backend
+</button>
+      <button type="button" class="
+        text-white bg-gray-800 hover:bg-gray-700
+        
+        text-lg py-4 px-5
+        
+        mr-3
+        inline-flex whitespace-no-wrap items-center justify-center border border-transparent
+        leading-none font-semibold rounded-full
+        focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+  Databases
+</button>
+      <button type="button" class="
+        text-white bg-gray-800 hover:bg-gray-700
+        
+        text-lg py-4 px-5
+        
+        mr-3
+        inline-flex whitespace-no-wrap items-center justify-center border border-transparent
+        leading-none font-semibold rounded-full
+        focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+  Build Tools
+</button>
+      <button type="button" class="
+        text-white bg-gray-800 hover:bg-gray-700
+        
+        text-lg py-4 px-5
+        
+        mr-3
+        inline-flex whitespace-no-wrap items-center justify-center border border-transparent
+        leading-none font-semibold rounded-full
+        focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+  DevOps
+</button>
+    </div>
+  </div>
+</div>
+  <footer></footer>
+  
+  <script>
+    const scrollTo = element => {
+      window.scrollTo({
+        top: element.offsetTop, 
+        left: 0, 
+        behavior: 'smooth'
+      });
+    };
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js" defer=""></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer=""></script>
+</body>
+
+</html>

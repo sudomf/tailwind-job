@@ -1,0 +1,22 @@
+<div class="bg-indigo-800 text-white flex items-center pb-32 pt-24 md:pt-40">
+  <c-container>
+    <div class="max-w-4xl mx-auto text-center">
+      <img src="/images/tailwindui-logo-on-dark.svg" class="h-7 sm:h-8 lg:h-10 inline-block mb-6" alt="Tailwind UI">
+      <c-typography variant="title">Welcome folks from Tailwind UI</c-typography>
+  
+      <c-type-it class="mt-2 max-w-xl mx-auto text-xl leading-7 lg:max-w-3xl lg:text-2xl lg:leading-8" 
+                 cursor="true">
+        I'll show why you should <b>hire me</b>.
+      </c-type-it>
+  
+      <c-button variant="primary" 
+                class="mt-8 md:text-xl" 
+                size="lg"
+                icon="true"
+                @click="scrollTo($refs.intro)">
+        <c-arrow-down-icon class="mr-2"></c-arrow-down-icon>
+        <span>Meet Me</span>
+      </c-button>
+    </div>
+  </c-container>
+</div>
