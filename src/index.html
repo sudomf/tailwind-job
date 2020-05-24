@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind UI - Job Application</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind UI - Job Application</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./index.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
 
-<body class="antialiased font-sans bg-gray-100 tracking-tight" x-data="{}">
-  <c-header></c-header>
-  <c-hero></c-hero>
-  <c-bottom-waves class="text-indigo-800"></c-bottom-waves>
-  <c-intro></c-intro>
-  <c-top-waves class="text-gray-200"></c-top-waves>
-  <c-about></c-about>
-  <c-top-waves class="text-gray-900 bg-gray-200"></c-top-waves>
-  <c-fullstack></c-fullstack>
-  <c-footer></c-footer>
-  
-  <script>
-    const scrollTo = element => {
-      window.scrollTo({
-        top: element.offsetTop, 
-        left: 0, 
-        behavior: 'smooth'
-      });
-    };
-  </script>
+  <body class="antialiased font-sans bg-gray-100 tracking-tight" x-data="{}">
+    <c-header></c-header>
+    <c-hero></c-hero>
+    <c-bottom-waves class="text-indigo-800"></c-bottom-waves>
+    <c-intro></c-intro>
+    <c-top-waves class="text-gray-200"></c-top-waves>
+    <c-about></c-about>
+    <c-top-waves class="text-gray-900 bg-gray-200"></c-top-waves>
+    <c-fullstack></c-fullstack>
+    <c-footer></c-footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-</body>
+    <script>
+      const scrollTo = (element) => {
+        window.scrollTo({
+          top: element.offsetTop,
+          left: 0,
+          behavior: 'smooth',
+        });
+      };
+    </script>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+  </body>
 </html>

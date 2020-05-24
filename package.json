@@ -30,10 +30,22 @@
   "husky": {
     "hooks": {
       "pre-push": "yarn build:production",
-      "pre-commit": "lint-staged --no-stash"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "*.js": [
+      "eslint --cache --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.html": [
+      "prettier --write --parser vue",
+      "git add"
+    ]
   }
 }

@@ -6,10 +6,12 @@ const onlyMarkup = process.argv.includes('--markup');
 const buildAll = !onlyStyles && !onlyMarkup;
 
 async function build() {
-  const tasks = Promise.all([
-    (buildAll || onlyStyles) && buildCSS(),
-    (buildAll || onlyMarkup) && buildHTML()
-  ].filter(Boolean));
+  const tasks = Promise.all(
+    [
+      (buildAll || onlyStyles) && buildCSS(),
+      (buildAll || onlyMarkup) && buildHTML(),
+    ].filter(Boolean)
+  );
 
   await tasks;
 }

@@ -10,13 +10,15 @@ const build = async () => {
   const css = await readFile(SOURCE_CSS);
   const plugins = [tailwindcss];
 
-  if(ENV === 'production'){ 
+  if (ENV === 'production') {
     plugins.push(autoprefixer);
     plugins.push(nano);
   }
 
-  const result =  await postcss(plugins)
-    .process(css, { from: SOURCE_CSS, to: TARGET_CSS });
+  const result = await postcss(plugins).process(css, {
+    from: SOURCE_CSS,
+    to: TARGET_CSS,
+  });
 
   return writeFile(TARGET_CSS, result.css, () => true);
 };
