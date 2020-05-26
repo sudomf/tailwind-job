@@ -5,14 +5,14 @@ https://hiremayke.netlify.app
 
 Hi folks. This is my way to show my interest in the job position and some of my skills to you guys.
 
-As I don't have much time available, I made a simple website using TaiwindCSS, AlpineJS, and a static page compiler that handles components, expressions, and HTML and CSS optimizations.
+As I don't have much time available, I made a simple website using TaiwindCSS, AlpineJS, and a static page compiler that handles components, expressions, HTML, and CSS optimizations.
 
 I made this to show that I like and I know how to build development tools and components. I did it from zero in 13 hours according to Wakatime.
 
 
 ## Getting Started
 
-You can play with it at https://codesandbox.io/.
+You can play with it at https://codesandbox.io/s/priceless-violet-jl5li.
 
 #### Commands
 
