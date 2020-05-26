@@ -2,10 +2,12 @@ const fs = require('fs');
 const path = require('path');
 const posthtml = require('posthtml');
 const renderAST = require('posthtml-render');
+const minify = require('html-minifier').minify;
 const { readFile, writeFile } = require('./utils');
+const { ENV } = require('./constants');
 
 const { SOURCE_HTML, TARGET_HTML, COMPONENTS_PATH } = require('./constants');
-const EXP_REG = /\{\{ (.+?) \}\}/gi;
+const EXP_REG = /\{\{([^]*?)\}\}/gi;
 const Cache = new Map();
 
 const getComponentHTML = (name) => {
@@ -24,12 +26,25 @@ const getComponentHTML = (name) => {
 const parseExpression = (exp, ctx) =>
   eval(`
     const ctx = ${JSON.stringify(ctx)};
-    const result = ${exp};
+    const content = key => require('../../src/content/' + key + '.json');
+    const result = eval(${JSON.stringify(exp)});
     typeof result !== 'undefined' ? result : '';
   `);
 
 const parseExpressions = (html, ctx) =>
   html.replace(EXP_REG, (_, group) => parseExpression(group, ctx));
+
+const sanitizeAttrs = (attrs) =>
+  Object.entries(attrs).reduce(
+    (memo, [key, value]) => ({
+      ...memo,
+      [key]: value
+        .replace(/^(?:[\t ]*(?:\r?\n|\r))+/gi, ' ')
+        .replace(/\s\s+/gi, ' ')
+        .trim(),
+    }),
+    {}
+  );
 
 const renderComponent = (node) => {
   node.attrs = node.attrs || {};
@@ -57,6 +72,7 @@ const renderComponent = (node) => {
 
   newNode.attrs = newNode.attrs || {};
   newNode.attrs = { ...newNode.attrs, ...alpineProps };
+  newNode.attrs = sanitizeAttrs(newNode.attrs);
 
   return newNode;
 };
@@ -73,7 +89,16 @@ const build = async () => {
     .use((tree) => render(tree))
     .process(source);
 
-  await writeFile(TARGET_HTML, result.html, 'utf-8');
+  let html = result.html;
+
+  if (ENV === 'production')
+    html = minify(html, {
+      collapseBooleanAttributes: true,
+      collapseWhitespace: true,
+      minifyJS: true,
+    });
+
+  await writeFile(TARGET_HTML, html, 'utf-8');
 };
 
 module.exports.build = build;
