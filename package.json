@@ -8,8 +8,8 @@
     "lint": "eslint ./**/*.js",
     "dev": "yarn build:dev && (yarn serve & yarn watch)",
     "serve": "browser-sync start --host '0.0.0.0' --port 8080 --server 'public' --files 'public' --no-notify",
-    "watch:markup": "chokidar 'src/**/*.{html,json}' -c 'yarn build:dev --markup'",
-    "watch:styles": "chokidar 'src/**/*.css' -c 'yarn build:dev --styles'",
+    "watch:markup": "export SHELL=/bin/bash && chokidar 'src/**/*.{html,json}' -c 'yarn build:dev --markup'",
+    "watch:styles": "export SHELL=/bin/bash && chokidar 'src/**/*.css' -c 'yarn build:dev --styles'",
     "watch": "yarn watch:markup & yarn watch:styles",
     "build:dev": "node build --development",
     "build:production": "NODE_ENV=production node build --production"
