@@ -3,11 +3,11 @@
 https://hiremayke.netlify.app
 
 
-Hi. This is my way to show my interest in the job position and some of my skills to you guys.
+Hi folks. This is my way to show my interest in the job position and some of my skills to you guys.
 
-As I don't have much time available, I made a simple website using TaiwindCSS, AlpineJS and a static page compiler that handles components, expressions, and html and css optimizations.
+As I don't have much time available, I made a simple website using TaiwindCSS, AlpineJS, and a static page compiler that handles components, expressions, and HTML and CSS optimizations.
 
-I made this to show that I really like and know how to build development tools and components. I did it from zero in 13 hours according to wakatime.
+I made this to show that I like and I know how to build development tools and components. I did it from zero in 13 hours according to Wakatime.
 
 
 ## Getting Started
@@ -30,7 +30,7 @@ build:production
 
 #### How to create and use a component
 
-All components should be at `src/components`. You just need to create a file with `.html`extenssion.
+All components should be at `src/components`. You just need to create a file with `.html` extension.
 
 Example:
 
@@ -42,7 +42,7 @@ Example:
 </div>
 ```
 
-To use a component, you just need to call it with `c-` prefix in any another html file.
+To use a component, you just need to call it with `c-` prefix in any other HTML file.
 
 Example:
 
@@ -61,7 +61,7 @@ Example:
 
 #### The template language
 
-I made a very simple template language using double curly brace. You can pass any valid JavaScript beetween `{{ }}`.
+I made a very simple template language using the double curly brace. You can pass any valid JavaScript between `{{ }}`.
 
 Example:
 
@@ -88,10 +88,6 @@ You can access a component prop using the special keyword `ctx` as you can see i
 
 #### Final words
 
-I really hope that you guys will apreciate this simple project. If you give me a chance, I can show a lot of more things that I can do. I really belive that I can help you with all that awesome comming features and tools of Tailwind UI.
+I really hope that you guys will appreciate this simple project. If you give me a chance, I can show you a lot more things that I can do. I really believe that I can help you with all those awesome coming features and tools of Tailwind UI.
 
-Take care folks. Good luck for us. See ya :)
-
-
-
-
+Take care. Good luck to us. See ya :)
