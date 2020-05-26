@@ -2,35 +2,28 @@
   "title": "Build Tools",
   "technologies": [
     {
-      "title": "CSS",
+      "title": "Webpack",
       "level": "advanced",
-      "sub": ["Responsive Design", "SCSS", "CSS Modules", "CSS in JS"]
-    },
-    { "title": "Vanilla JavaScript", "level": "advanced" },
-    { "title": "ES6+", "level": "advanced" },
-    { "title": "Typescript", "level": "intermediate" },
-    {
-      "title": "React",
-      "level": "advanced",
-      "sub": ["UI Components", "Redux", "React Native"]
+      "sub": [
+        "Optimization for dev environments in big projects with tons of modules",
+        "Code Splitting",
+        "Creation of custom loaders",
+        "Creation of plugins",
+        "Configuration for multiple environments"
+      ]
     },
     {
-      "title": "VueJS",
-      "level": "advanced",
-      "sub": ["UI Components", "Vuex"]
+      "title": "PostCSS",
+      "level": "advanced"
     },
-    { "title": "InertiaJS", "level": "advanced" },
-    { "title": "Stimulus", "level": "advanced" },
-    { "title": "jQuery", "level": "advanced" }
+    { "title": "Gulp", "level": "advanced" },
+    { "title": "Grunt", "level": "advanced" }
   ],
   "achievements": [
-    "A from zero to hero frontend architecture for a team of 10+ developers working on a website with 150+ million page views per month.",
-    "A component system to work in Ruby on Rails with CSS Modules in server-side rendered ERB templates.",
-    "An advanced Webpack configuration for development, staging, and production with code splitting and performance optimizations.",
-    "A Webpack loader to handle CSS Modules in ERB templates.",
-    "A PostCSS plugin to work with themes in a large CSS source.",
-    "An architecture with Svelte, Inertia, and Storeon for a project with many user interactions.",
-    "A CLI to generate code for components and pages following the project pattern.",
-    "An advanced select input made with Svelte with remote requests and rendering virtualization."
+    "A custom loader to handle CSS Modules in ERB files.",
+    "An optimized configuration for development and production environments in a project with 6k+ modules.",
+    "Optimization from 12min to 1min in the startup of a webpack development environment of a project with 6k+ modules.",
+    "Bash scripts to package and deploy a large Ruby on Rails project including backend, frontend, and scale scripts for AWS CodeDeploy.",
+    "A PostCSS plugin to make props values variations simple for themes creation. Like dark themes."
   ]
 }

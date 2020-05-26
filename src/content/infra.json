@@ -2,35 +2,45 @@
   "title": "Infrastructure",
   "technologies": [
     {
-      "title": "CSS",
-      "level": "advanced",
-      "sub": ["Responsive Design", "SCSS", "CSS Modules", "CSS in JS"]
-    },
-    { "title": "Vanilla JavaScript", "level": "advanced" },
-    { "title": "ES6+", "level": "advanced" },
-    { "title": "Typescript", "level": "intermediate" },
-    {
-      "title": "React",
-      "level": "advanced",
-      "sub": ["UI Components", "Redux", "React Native"]
+      "title": "AWS",
+      "level": "intermediate",
+      "sub": [
+        "CodeBuild",
+        "CodeDeploy",
+        "Elastic Beanstalk",
+        "S3",
+        "Cloudfront"
+      ]
     },
     {
-      "title": "VueJS",
-      "level": "advanced",
-      "sub": ["UI Components", "Vuex"]
+      "title": "Digital Ocean",
+      "level": "intermediate"
     },
-    { "title": "InertiaJS", "level": "advanced" },
-    { "title": "Stimulus", "level": "advanced" },
-    { "title": "jQuery", "level": "advanced" }
+    {
+      "title": "Docker",
+      "level": "advanced",
+      "sub": [
+        "Docker Compose",
+        "Custom image creation",
+        "Dockenizing Development Environments"
+      ]
+    },
+    {
+      "title": "Gitlab CI",
+      "level": "advanced"
+    },
+    {
+      "title": "Circle CI",
+      "level": "advanced"
+    },
+    {
+      "title": "Travis CI",
+      "level": "advanced"
+    }
   ],
   "achievements": [
-    "A from zero to hero frontend architecture for a team of 10+ developers working on a website with 150+ million page views per month.",
-    "A component system to work in Ruby on Rails with CSS Modules in server-side rendered ERB templates.",
-    "An advanced Webpack configuration for development, staging, and production with code splitting and performance optimizations.",
-    "A Webpack loader to handle CSS Modules in ERB templates.",
-    "A PostCSS plugin to work with themes in a large CSS source.",
-    "An architecture with Svelte, Inertia, and Storeon for a project with many user interactions.",
-    "A CLI to generate code for components and pages following the project pattern.",
-    "An advanced select input made with Svelte with remote requests and rendering virtualization."
+    "Dockenization of the development environment of a big monolithic Ruby on Rails application.",
+    "Refactoring of the build and deploy scripts of an entire application with some microservices and an integrated frontend project.",
+    "My own remote development environment using a Macbook as my primary computer and a PC with Ubuntu as my remote development environment. Now Chrome can eat more RAM from the Macbook :joy."
   ]
 }

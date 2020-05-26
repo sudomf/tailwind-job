@@ -2,35 +2,29 @@
   "title": "Backend",
   "technologies": [
     {
-      "title": "CSS",
+      "title": "NodeJS",
       "level": "advanced",
-      "sub": ["Responsive Design", "SCSS", "CSS Modules", "CSS in JS"]
+      "sub": ["Express", "Deploy Scripts", "CLI Development", "Serverless"]
     },
-    { "title": "Vanilla JavaScript", "level": "advanced" },
-    { "title": "ES6+", "level": "advanced" },
-    { "title": "Typescript", "level": "intermediate" },
-    {
-      "title": "React",
-      "level": "advanced",
-      "sub": ["UI Components", "Redux", "React Native"]
-    },
-    {
-      "title": "VueJS",
-      "level": "advanced",
-      "sub": ["UI Components", "Vuex"]
-    },
-    { "title": "InertiaJS", "level": "advanced" },
-    { "title": "Stimulus", "level": "advanced" },
-    { "title": "jQuery", "level": "advanced" }
+    { "title": "Ruby on Rails", "level": "advanced" },
+    { "title": "PHP", "level": "advanced" },
+    { "title": "C#", "level": "advanced" },
+    { "title": "Python", "level": "beginner" },
+    { "title": "MVC architecture", "level": "advanced" },
+    { "title": "NuxtJS", "level": "intermediate" },
+    { "title": "NextJS", "level": "intermediate" },
+    { "title": "Gatsby", "level": "intermediate" },
+    { "title": "Laravel", "level": "intermediate" },
+    { "title": "GraphQL", "level": "intermediate" },
+    { "title": "Serverless", "level": "intermediate" },
+    { "title": "Hasura", "level": "beginner" },
+    { "title": "Prisma", "level": "beginner" }
   ],
   "achievements": [
-    "A \"from zero to hero\" frontend architecture for a team of 10+ developers working on a website with 150+ million page views per month.",
-    "A component system to work in Ruby on Rails with CSS Modules in server-side rendered ERB templates.",
-    "An advanced Webpack configuration for development, staging, and production with code splitting and performance optimizations.",
-    "A Webpack loader to handle CSS Modules in ERB templates.",
-    "A PostCSS plugin to work with themes in a large CSS source.",
-    "An architecture with Svelte, Inertia, and Storeon for a project with many user interactions.",
-    "A CLI to generate code for components and pages following the project pattern.",
-    "An advanced select input made with Svelte with remote requests and rendering virtualization."
+    "An custom implentation of InertiaJS in a Ruby on Rails big project.",
+    "An AWS lambda service to print large amount of data as PDF with a self templating system.",
+    "A microservice to handle Svelte SSR to use in a Ruby on Rails application as a custom render layer.",
+    "A GraphQL backend with Hasura and lambda functions for my side project that is a TailwindCSS Page Builder. I'll show you some spoiler about this project soon.",
+    "A fullstack project using Python on backend to fetch ans sync a lot of data from Google Analytics, Facebook and some other sources to create customized charts in a React Dashboard as an MVP for a SaaS product."
   ]
 }

@@ -2,6 +2,17 @@
   "title": "Frontend",
   "technologies": [
     {
+      "title": "Design",
+      "level": "advanced",
+      "sub": [
+        "Figma",
+        "Sketch",
+        "Atomic Design",
+        "Design Tokens",
+        "Design System"
+      ]
+    },
+    {
       "title": "CSS",
       "level": "advanced",
       "sub": ["Responsive Design", "SCSS", "CSS Modules", "CSS in JS"]
@@ -36,6 +47,7 @@
     "A PostCSS plugin to work with themes in a large CSS source.",
     "An architecture with Svelte, Inertia, and Storeon for a project with many user interactions.",
     "A CLI to generate code for components and pages following the project pattern.",
-    "An advanced select input made with Svelte with remote requests and rendering virtualization."
+    "An advanced select input made with Svelte with remote requests and rendering virtualization.",
+    "I'm doing a side-project called FrontStudio. It's a Tailwind CSS cloud-based page builder."
   ]
 }
