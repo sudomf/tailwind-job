@@ -1,18 +1,19 @@
-<div class="min-h-screen" x-ref="intro">
-  <c-container class="py-20 md:py-40">
+<div class="min-h-screen py-20 md:py-40" x-ref="intro">
+  <c-container>
     <c-typography variant="title">Hi, my name is Mayke</c-typography>
-    <c-typography variant="subtitle">I made this website to show some of my skills as a fullstack developer.</c-typography>
+    <c-typography variant="subtitle" class="text-gray-600 mb-6">I made this website to show some of my skills.</c-typography>
+    <c-typography class="text-gray-600">Please take a look at the repository, I made a simple build system.</c-typography>
 
-    <div class="mt-10 max-w-sm grid grid-flow-row grid-cols-2 col-gap-3">
+    <div class="mt-8 max-w-sm grid grid-flow-row grid-cols-2 col-gap-3">
       <c-button size="lg" 
                 variant="primary" 
                 icon="true"
-                @click="scrollTo($refs.about)">
+                @click="scrollToSection($refs.about)">
         <c-arrow-down-icon class="mr-2"></c-arrow-down-icon>
         <span>Continue</span>
       </c-button>
 
-      <c-button size="lg" icon="true">
+      <c-button href="https://github.com/maykefreitas/tailwind-job" target="blank" size="lg" icon="true">
         <c-code-icon class="mr-2"></c-code-icon>
         <span>Source <span class="hidden sm:inline-block">Code</span></span>
       </c-button>

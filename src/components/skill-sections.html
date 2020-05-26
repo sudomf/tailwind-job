@@ -1,0 +1,8 @@
+<div>
+  {{ 
+    ['frontend', 'backend', 'build', 'infra']
+      .map(name => (`
+        <c-skills name="${name}"></c-skills>
+      `)).join('');
+  }}
+</div>

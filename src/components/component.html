@@ -1,0 +1,11 @@
+<{{ ctx.tag }} 
+ {{ 
+   let internalProps = ['tag', 'children'];
+   Object.entries(ctx)
+     .filter(([key]) => !internalProps.includes(key))
+     .map(([key, value]) => `${key}="${value}"`)
+     .join(' '); 
+  }}
+>
+{{ ctx.children }}
+</{{ ctx.tag }}>

@@ -1,0 +1,10 @@
+<div class="mb-4">
+  <div class="flex items-center">
+    <c-typography variant="label" class="mr-3">{{ ctx.title }}</c-typography>
+    <c-badge variant="primary">{{ ctx.level }}</c-badge>
+  </div>
+
+  {{ 
+    ctx.children ? `<div>${ctx.children}</div> ` : '' 
+  }}
+</div>

@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind UI - Job Application</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./index.css" />
   </head>
 
-  <body class="antialiased font-sans bg-gray-100 tracking-tight" x-data="{}">
+  <body class="antialiased font-sans bg-white tracking-tight text-gray-900" x-data="{}">
     <c-header></c-header>
     <c-hero></c-hero>
-    <c-bottom-waves class="text-indigo-800"></c-bottom-waves>
+    <c-waves class="text-white bg-indigo-800"></c-waves>
     <c-intro></c-intro>
-    <c-top-waves class="text-gray-200"></c-top-waves>
+    <c-waves class="text-gray-100"></c-waves>
     <c-about></c-about>
-    <c-top-waves class="text-gray-900 bg-gray-200"></c-top-waves>
+    <c-waves class="text-gray-900 bg-gray-100"></c-waves>
     <c-fullstack></c-fullstack>
+    <c-waves class="text-white bg-gray-900"></c-waves>
+    <c-skill-sections></c-skill-sections>
+    <c-waves class="text-gray-900"></c-waves>
+    <c-spoiler></c-spoiler>
     <c-footer></c-footer>
 
     <script>
-      const scrollTo = (element) => {
+      function scrollToSection(element) {
         window.scrollTo({
           top: element.offsetTop,
           left: 0,
@@ -33,13 +34,7 @@
       };
     </script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"
-      defer
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
-      defer
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js" defer></script> 
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   </body>
 </html>

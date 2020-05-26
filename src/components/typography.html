@@ -1,8 +1,10 @@
 <div
   class="
-  {{ ctx.variant === 'title' ? 'text-5xl md:text-6xl font-extrabold leading-tight' : '' }} 
-  {{ ctx.variant === 'subtitle' ? 'text-2xl md:text-3xl max-w-2xl mt-3' : '' }} 
-  {{ ctx.variant === 'paragraph' ? 'text-xl mb-6' : '' }} 
+  {{ ctx.variant === 'title' ? 'block text-5xl md:text-6xl font-extrabold leading-tight md:leading-normal' : '' }} 
+  {{ ctx.variant === 'subtitle' ? 'block text-2xl md:text-2xl' : '' }} 
+  {{ ctx.variant === 'label' ? 'inline text-xl md:text-2xl font-semibold' : '' }} 
+  {{ ctx.variant === 'paragraph' ? 'block text-lg mb-6' : '' }} 
+  {{ !ctx.variant ? 'inline text-lg leading-8' : '' }} 
   {{ ctx.class }}"
 >
   {{ ctx.children }}

@@ -2,7 +2,7 @@
   <c-container>
     <div class="max-w-4xl mx-auto text-center">
       <img src="/images/tailwindui-logo-on-dark.svg" class="h-7 sm:h-8 lg:h-10 inline-block mb-6" alt="Tailwind UI">
-      <c-typography variant="title">Welcome folks from Tailwind UI</c-typography>
+      <c-typography variant="title" class="md:leading-tight">Welcome folks from Tailwind UI</c-typography>
   
       <c-type-it class="mt-2 max-w-xl mx-auto text-xl leading-7 lg:max-w-3xl lg:text-2xl lg:leading-8" 
                  cursor="true">
@@ -13,7 +13,7 @@
                 class="mt-8 md:text-xl" 
                 size="lg"
                 icon="true"
-                @click="scrollTo($refs.intro)">
+                @click="scrollToSection($refs.intro)">
         <c-arrow-down-icon class="mr-2"></c-arrow-down-icon>
         <span>Meet Me</span>
       </c-button>
